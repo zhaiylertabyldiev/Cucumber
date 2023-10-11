@@ -9,10 +9,11 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumber.html", "json:target/report.json"},
         features = "src/test/resources/features",
         glue = "steps",
-        tags = "@nameTag",
-        dryRun = false
+        tags = "@login",
+        dryRun = true
 
 )
+
 public class Runner {
 
 }

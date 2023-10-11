@@ -1,12 +1,13 @@
 Feature: test login
+  Background:
 
   @nameTag
-  Scenario Outline: User login with valid credentials
+  Scenario Outline:
     Given the user is on the login page
-    When correct "<username>" username
+    When the user enters correct "<username>" username
     And correct "<password>" password
     And the user clicks the login button
-    Then verify user logs in successfully
+    Then verify the user logs in successfully
 
     Examples:
       | username     | password |
